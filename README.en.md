@@ -1,39 +1,21 @@
-## 👏 MAJOR UPDATE!!! Serious!
-
-Read in other languages: [Mandarin](https://github.com/Snailclimb/JavaGuide/blob/main/README.md)
-- JavaGuide Read online version（New Version，Recommended👍：https://javaguide.cn/
-- JavaGuide Online reading version (old version, some links are no longer accessible): https://snailclimb.gitee.io/javaguide/#/
--  [JavaGuide Interview Blitz Edition] PDF Version Download (https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=100029614&idx=1&sn=62993c5cf10265cb7018db7f1ec67250&chksm=4ea1fb6579d67273499b7243641d4ef372decd08047bfbb6dfb5843ef81c7ccba209086cf345#rd) 
-
-<a href="https://t.1yb.co/GXLF"><img src="https://img-blog.csdnimg.cn/2f61f3e2d1f2427da977340919e41616.png" style="margin: 0 auto;width:850px" /></a>
-
-
-> 1. **Introduction**: For an introduction to the JavaGuide, see: [Some notes on the JavaGuide](https://www.yuque.com/snailclimb/dr6cvl/mr44yt) 。
-> 2. **Contribution Guide** : You are welcome to participate in [the maintenance of JavaGuide](https://github.com/Snailclimb/JavaGuide/issues/1235), it's a very rewarding thing to do.
-> 3. **PDF Version** : [JavaGuide Interview Blitz Edition PDF Version](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=100029614&idx=1&sn=62993c5cf10265cb7018db7f1ec67250&chksm=4ea1fb6579d67273499b7243641d4ef372decd08047bfbb6dfb5843ef81c7ccba209086cf345#rd) 。
-> 4. **Illustrated Computer Fundamentals** : [Illustrated Computer Fundamentals PDF Download](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=100021725&idx=1&sn=2db9664ca25363139a81691043e9fd8f&chksm=4ea19a1679d61300d8990f7e43bfc7f476577a81b712cf0f9c6f6552a8b219bc081efddb5c54#rd) 。
-> 5. **Planet of Knowledge** : Resume guide/Java learning/Interview guide/Interview booklet. You are welcome to join [My Knowledge Planet](https://www.yuque.com/docs/share/8a30ffb5-83f3-40f9-baf9-38de68b906dc) 。
-> 6. **Interview Special Edition** : For those who are preparing for the interview, you can consider the interview special edition: [Java Interview Advanced Guide].(https://www.yuque.com/docs/share/f37fc804-bfe6-4b0d-b373-9c462188fec7) (Very high quality, built specifically for interviews, free for planet users)
-> 7. **Reprint Instructions**: All the following articles are my (Guide) original if not stated at the beginning of the text, reproduced at the beginning of the text to indicate the source, if found malicious plagiarism / transport, will use legal weapons to defend their rights. Let's maintain a good technical creation environment together! ⛽️
-
-<p align="center">
+<p style="text-align:center">
 <a href="https://github.com/Snailclimb/JavaGuide" target="_blank">
-	<img src="https://img-blog.csdnimg.cn/img_convert/1c00413c65d1995993bf2b0daf7b4f03.png#pic_center" width=""/>
+	<img src="https://oss.javaguide.cn/github/javaguide/csdn/1c00413c65d1995993bf2b0daf7b4f03.png" width=""/>
 </a>
 </p>
-<p align="center">
+<p style="text-align:center">
   <a href="https://javaguide.cn/"><img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读"></a>
   <img src="https://img.shields.io/github/stars/Snailclimb/JavaGuide" alt="stars"/>
   <img src="https://img.shields.io/github/forks/Snailclimb/JavaGuide" alt="forks"/>
   <img src="https://img.shields.io/github/issues/Snailclimb/JavaGuide" alt="issues"/>
 </p>
-<h3 align="center">Recommended</h3>
+<h3 style="text-align:center">Recommended</h3>
 <table>
   <tbody>
     <tr>
-       <td align="center" valign="middle">
+       <td style="text-align:center" valign="middle">
         <a href="https://sourl.cn/e7ee87">
-         <img src="./media/sponsor/xingqiu.png" style="margin: 0 auto;width:850px" /></a>
+         <img src="https://oss.javaguide.cn/xingqiu/xingqiu.png" style="margin: 0 auto;width:850px" /></a>
       </td>       
     </tr>
   </tbody>
@@ -158,36 +140,16 @@ In addition，[GeeksforGeeks]( https://www.geeksforgeeks.org/fundamentals-of-alg
 
 1. [Database Basics Summary](docs/database/数据库基础知识.md)
 2. **[MySQL Knowledge Summary](docs/database/mysql/mysql知识点&面试题总结.md)** (Must see:+1:)
-4. [One Thousand Lines MySQL Study Notes](docs/database/mysql/a-thousand-lines-of-mysql-study-notes.md)
 5. [MySQL High Performance Optimization Specification Recommendations](docs/database/mysql/mysql-high-performance-optimization-specification-recommendations.md)
 
 **Important knowledge points:**
 
-1. <div align="center">
-       <p>
-           <a href="https://github.com/Snailclimb/JavaGuide" target="_blank">
-               <img src="https://img-blog.csdnimg.cn/img_convert/1c00413c65d1995993bf2b0daf7b4f03.png#pic_center" width="" />
-           </a>
-       </p>
-       <p>
-           <a href="https://javaguide.cn/"><img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读" /></a>
-           <img src="https://img.shields.io/github/stars/Snailclimb/JavaGuide" alt="stars" />
-           <img src="https://img.shields.io/github/forks/Snailclimb/JavaGuide" alt="forks" />
-           <img src="https://img.shields.io/github/issues/Snailclimb/JavaGuide" alt="issues" />
-       </p>
-       <p>
-           <a href="https://www.yuque.com/docs/share/f37fc804-bfe6-4b0d-b373-9c462188fec7">
-               <img src="../media/sponsor/xingqiu.png" style="margin: 0 auto; width: 850px;" />
-           </a>
-       </p>
-   </div>
-
-2. [Transaction isolation level (graphic detail)](docs/database/mysql/transaction-isolation-level.md)
-3. [MySQL's Three Major Logs (binlog, redo log and undo log) Explained](docs/database/mysql/mysql-logs.md)
-4. [InnoDB storage engine implementation of MVCC](docs/database/mysql/innodb-implementation-of-mvcc.md)
-5. [How does a SQL statement get executed in MySQL?](docs/database/mysql/how-sql-executed-in-mysql.md)
-6. [Character set details: Why is it not recommended to use utf8 in MySQL?](docs/database/字符集.md)
-7. [A little thought on how to store time in the database](docs/database/mysql/some-thoughts-on-database-storage-time.md)
+1. [Transaction isolation level (graphic detail)](docs/database/mysql/transaction-isolation-level.md)
+2. [MySQL's Three Major Logs (binlog, redo log and undo log) Explained](docs/database/mysql/mysql-logs.md)
+3. [InnoDB storage engine implementation of MVCC](docs/database/mysql/innodb-implementation-of-mvcc.md)
+4. [How does a SQL statement get executed in MySQL?](docs/database/mysql/how-sql-executed-in-mysql.md)
+5. [Character set details: Why is it not recommended to use utf8 in MySQL?](docs/database/字符集.md)
+6. [A little thought on how to store time in the database](docs/database/mysql/some-thoughts-on-database-storage-time.md)
 
 ### Redis
 
@@ -236,10 +198,6 @@ If you have not touched Java Web development, you can first look at my summary o
 
 [MyBatis Common Interview Questions Summary](docs/system-design/framework/mybatis/mybatis-interview.md)
 
-#### Spring Cloud
-
-[Getting Started with Spring Cloud in Plain English](docs/system-design/framework/springcloud/springcloud-intro.md)
-
 ### Security
 
 #### Certification Authorization
@@ -281,7 +239,6 @@ RPC makes calling remote service calls as easy as calling local methods.
 Dubbo is a home-grown RPC framework , open source by Ali . Related reading.
 
 - [Dubbo FAQ Summary](docs/distributed-system/rpc/dubbo.md)
-- [Why don't we use RPC instead of HTTP directly for calls between services?](docs/distributed-system/rpc/why-use-rpc.md)
 
 ### API gateway
 
@@ -411,8 +368,8 @@ If you want to follow my updated articles and the dry goods I share in real time
 
 **《Java Interview Blitz》:** A PDF version of "Java Interview Blitz" derived from this document specifically for interviews [Public](#公众号) Reply back to **"Interview Blitz "** and get it for free!
 
-![My Public](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/167598cd2e17b8ec.png)
-
-![](https://img-blog.csdnimg.cn/7af97d4dccdb4123a541f336a107ca86.png)
+<div align="center">   
+    <img src="https://oss.javaguide.cn/github/javaguide/gongzhonghaoxuanchuan.png" style="margin: 0 auto;" />  
+</div>
 
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3a2d826918a44bcbaa8d9272db3ad7d2~tplv-k3u1fbpfcp-watermark.image)

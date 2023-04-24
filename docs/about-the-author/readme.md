@@ -3,7 +3,7 @@ title: 个人介绍 Q&A
 category: 走近作者
 ---
 
-大家好，我是 Gudie哥！这篇文章我会通过 Q&A 的形式简单介绍一下我自己。
+这篇文章我会通过 Q&A 的形式简单介绍一下我自己。
 
 ## 我是什么时候毕业的？
 
@@ -13,7 +13,7 @@ category: 走近作者
 
 下面这张是当时拍的毕业照（后排最中间的就是我）：
 
-![](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/javaguide/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D.png)
+![](https://oss.javaguide.cn/javaguide/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D.png)
 
 ## 我坚持写了多久博客？
 
@@ -35,7 +35,7 @@ category: 走近作者
 
 下面这张是我大三去三亚的时候拍的：
 
-![](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/javaguide/psc.jpeg)
+![](https://oss.javaguide.cn/javaguide/psc.jpeg)
 
 其实，我在大学就这么努力地开始赚钱，也主要是因为家庭条件太一般，父母赚钱都太辛苦了！也正是因为我自己迫切地想要减轻父母的负担，所以才会去尝试这么多赚钱的方法。
 
@@ -47,7 +47,7 @@ category: 走近作者
 
 ## 为什么自称 Guide哥？
 
-可能是因为我的项目名字叫做 JavaGudie , 所以导致有很多人称呼我为 **Guide哥**。
+可能是因为我的项目名字叫做 JavaGuide , 所以导致有很多人称呼我为 **Guide哥**。
 
 后面，为了读者更方便称呼，我就将自己的笔名改成了 **Guide哥**。
 
@@ -61,3 +61,4 @@ category: 走近作者
 
 生活本就是有苦有甜。共勉！
 
+![JavaGuide 官方公众号](https://oss.javaguide.cn/github/javaguide/gongzhonghaoxuanchuan.png)

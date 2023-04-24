@@ -1,5 +1,5 @@
 ---
-title:  Spring/Spring Boot 常用注解总结！
+title:  Spring&SpringBoot常用注解总结
 category: 框架
 tag:
   - SpringBoot
@@ -7,10 +7,6 @@ tag:
 ---
 
 ### 0.前言
-
-_大家好，我是 Guide 哥！这是我的 221 篇优质原创文章。如需转载，请在文首注明地址，蟹蟹！_
-
-本文已经收录进我的 75K Star 的 Java 开源项目 JavaGuide：[https://github.com/Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide)。
 
 可以毫不夸张地说，这篇文章介绍的 Spring/SpringBoot 常用注解基本已经涵盖你工作中遇到的大部分常用的场景。对于每一个注解我都说了具体用法，掌握搞懂，使用 SpringBoot 来开发项目基本没啥大问题了！
 
@@ -65,7 +61,7 @@ public @interface SpringBootConfiguration {
 根据 SpringBoot 官网，这三个注解的作用分别是：
 
 - `@EnableAutoConfiguration`：启用 SpringBoot 的自动配置机制
-- `@ComponentScan`： 扫描被`@Component` (`@Service`,`@Controller`)注解的 bean，注解默认会扫描该类所在的包下所有的类。
+- `@ComponentScan`： 扫描被`@Component` (`@Repository`,`@Service`,`@Controller`)注解的 bean，注解默认会扫描该类所在的包下所有的类。
 - `@Configuration`：允许在 Spring 上下文中注册额外的 bean 或导入其他配置类
 
 ### 2. Spring Bean 相关
@@ -274,7 +270,7 @@ public class UserRegisterRequest {
 
 这样我们的后端就可以直接把 json 格式的数据映射到我们的 `UserRegisterRequest` 类上。
 
-![](images/spring-annotations/@RequestBody.png)
+![](./images/spring-annotations/@RequestBody.png)
 
 👉 需要注意的是：**一个请求方法只可以有一个`@RequestBody`，但是可以有多个`@RequestParam`和`@PathVariable`**。 如果你的方法必须要用两个 `@RequestBody`来接受数据的话，大概率是你的数据库设计或者系统设计出问题了！
 
@@ -356,7 +352,7 @@ class WebSite {
 }
 ```
 
-更多内容请查看我的这篇文章：《[10 分钟搞定 SpringBoot 如何优雅读取配置文件？](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486181&idx=2&sn=10db0ae64ef501f96a5b0dbc4bd78786&chksm=cea2452ef9d5cc384678e456427328600971180a77e40c13936b19369672ca3e342c26e92b50&token=816772476&lang=zh_CN#rd)》 。
+更多内容请查看我的这篇文章：[《10 分钟搞定 SpringBoot 如何优雅读取配置文件？》](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486181&idx=2&sn=10db0ae64ef501f96a5b0dbc4bd78786&chksm=cea2452ef9d5cc384678e456427328600971180a77e40c13936b19369672ca3e342c26e92b50&token=816772476&lang=zh_CN#rd) 。
 
 ### 6. 参数校验
 
@@ -370,7 +366,7 @@ SpringBoot 项目的 spring-boot-starter-web 依赖中已经有 hibernate-valida
 
 **注**：更新版本的 spring-boot-starter-web 依赖中不再有 hibernate-validator 包（如2.3.11.RELEASE），需要自己引入 `spring-boot-starter-validation` 依赖。
 
-![](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/2021/03/c7bacd12-1c1a-4e41-aaaf-4cad840fc073.png)
+![](https://oss.javaguide.cn/2021/03/c7bacd12-1c1a-4e41-aaaf-4cad840fc073.png)
 
 非 SpringBoot 项目需要自行引入相关依赖包，这里不多做讲解，具体可以查看我的这篇文章：《[如何在 Spring/Spring Boot 中做参数校验？你需要了解的都在这里！](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485783&idx=1&sn=a407f3b75efa17c643407daa7fb2acd6&chksm=cea2469cf9d5cf8afbcd0a8a1c9cc4294d6805b8e01bee6f76bb2884c5bc15478e91459def49&token=292197051&lang=zh_CN#rd)》。
 
@@ -795,7 +791,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 - `@OneToOne` 声明一对一关系
 - `@OneToMany` 声明一对多关系
 - `@ManyToOne` 声明多对一关系
-- `@MangToMang` 声明多对多关系
+- `@ManyToMany` 声明多对多关系
 
 更多关于 Spring Boot JPA 的文章请看我的这篇文章：[一文搞懂如何在 Spring Boot 正确中使用 JPA](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247485689&idx=1&sn=061b32c2222869932be5631fb0bb5260&chksm=cea24732f9d5ce24a356fb3675170e7843addbfcc79ee267cfdb45c83fc7e90babf0f20d22e1&token=292197051&lang=zh_CN#rd) 。
 
@@ -818,10 +814,7 @@ public void save() {
 - **作用于类**：当把`@Transactional` 注解放在类上时，表示所有该类的 public 方法都配置相同的事务属性信息。
 - **作用于方法**：当类配置了`@Transactional`，方法也配置了`@Transactional`，方法的事务会覆盖类的事务配置信息。
 
-更多关于 Spring 事务的内容请查看：
-
-1. [可能是最漂亮的 Spring 事务管理详解](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247484943&idx=1&sn=46b9082af4ec223137df7d1c8303ca24&chksm=cea249c4f9d5c0d2b8212a17252cbfb74e5fbe5488b76d829827421c53332326d1ec360f5d63&token=1082669959&lang=zh_CN#rd)
-2. [一口气说出 6 种 @Transactional 注解失效场景](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=2247486483&idx=2&sn=77be488e206186803531ea5d7164ec53&chksm=cea243d8f9d5cacecaa5c5daae4cde4c697b9b5b21f96dfc6cce428cfcb62b88b3970c26b9c2&token=816772476&lang=zh_CN#rd)
+更多关于 Spring 事务的内容请查看我的这篇文章：[可能是最漂亮的 Spring 事务管理详解](./spring-transaction.md) 。
 
 ### 10. json 数据处理
 

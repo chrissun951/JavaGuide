@@ -1,14 +1,10 @@
 ---
-title:  Spring Boot 自动装配原理
+title:  SpringBoot 自动装配原理详解
 category: 框架
 tag:
   - SpringBoot
 ---
 
-# 
-
-> 本文已经收录进  Github 95k+ Star 的Java项目JavaGuide 。JavaGuide项目地址 : https://github.com/Snailclimb/JavaGuide 。
->
 > 作者：[Miki-byte-1024](https://github.com/Miki-byte-1024) & [Snailclimb](https://github.com/Snailclimb)
 
 每次问到 Spring Boot， 面试官非常喜欢问这个问题：“讲述一下 SpringBoot 自动装配原理？”。
@@ -129,7 +125,8 @@ public @interface SpringBootConfiguration {
 - `@Configuration`：允许在上下文中注册额外的 bean 或导入其他配置类
 - `@ComponentScan`： 扫描被`@Component` (`@Service`,`@Controller`)注解的 bean，注解默认会扫描启动类所在的包下所有的类 ，可以自定义不扫描某些 bean。如下图所示，容器中将排除`TypeExcludeFilter`和`AutoConfigurationExcludeFilter`。
 
-  ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bcc73490afbe4c6ba62acde6a94ffdfd~tplv-k3u1fbpfcp-watermark.image)
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bcc73490afbe4c6ba62acde6a94ffdfd~tplv-k3u1fbpfcp-watermark.image)
 
 `@EnableAutoConfiguration` 是实现自动装配的重要注解，我们以这个注解入手。
 
@@ -142,7 +139,7 @@ public @interface SpringBootConfiguration {
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@AutoConfigurationPackage //作用：将main包下的所欲组件注册到容器中
+@AutoConfigurationPackage //作用：将main包下的所有组件注册到容器中
 @Import({AutoConfigurationImportSelector.class}) //加载自动装配类 xxxAutoconfiguration
 public @interface EnableAutoConfiguration {
     String ENABLED_OVERRIDE_PROPERTY = "spring.boot.enableautoconfiguration";

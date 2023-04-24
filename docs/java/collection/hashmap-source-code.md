@@ -1,5 +1,5 @@
 ---
-title:  HashMap源码&底层数据结构分析
+title: HashMap 源码分析
 category: Java
 tag:
   - Java集合
@@ -59,7 +59,7 @@ static int hash(int h) {
 
 所谓 **“拉链法”** 就是：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。
 
-![jdk1.8之前的内部结构](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-7/jdk1.8之前的内部结构.png)
+![jdk1.8 之前的内部结构-HashMap](https://oss.javaguide.cn/github/javaguide/java/collection/jdk1.7_hashmap.png)
 
 ### JDK1.8 之后
 
@@ -67,7 +67,7 @@ static int hash(int h) {
 
 当链表长度大于阈值（默认为 8）时，会首先调用 `treeifyBin()`方法。这个方法会根据 HashMap 数组来决定是否转换为红黑树。只有当数组长度大于或者等于 64 的情况下，才会执行转换红黑树操作，以减少搜索时间。否则，就是只是执行 `resize()` 方法对数组扩容。相关源码这里就不贴了，重点关注 `treeifyBin()`方法即可！
 
-![](https://oscimg.oschina.net/oscnet/up-bba283228693dae74e78da1ef7a9a04c684.png)
+![jdk1.8之后的内部结构-HashMap](https://oss.javaguide.cn/github/javaguide/java/collection/jdk1.8_hashmap.png)
 
 **类的属性：**
 
@@ -274,19 +274,18 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
     // (n - 1) & hash 确定元素存放在哪个桶中，桶为空，新生成结点放入桶中(此时，这个结点是放在数组中)
     if ((p = tab[i = (n - 1) & hash]) == null)
         tab[i] = newNode(hash, key, value, null);
-    // 桶中已经存在元素
+    // 桶中已经存在元素（处理hash冲突）
     else {
         Node<K,V> e; K k;
-        // 比较桶中第一个元素(数组中的结点)的hash值相等，key相等
+        // 判断table[i]中的元素是否与插入的key一样，若相同那就直接使用插入的值p替换掉旧的值e。
         if (p.hash == hash &&
             ((k = p.key) == key || (key != null && key.equals(k))))
-                // 将第一个元素赋值给e，用e来记录
                 e = p;
-        // hash值不相等，即key不相等；为红黑树结点
+        // 判断插入的是否是红黑树节点
         else if (p instanceof TreeNode)
             // 放入树中
             e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
-        // 为链表结点
+        // 不是红黑树节点则说明为链表结点
         else {
             // 在链表最末插入结点
             for (int binCount = 0; ; ++binCount) {

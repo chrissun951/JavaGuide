@@ -1,32 +1,45 @@
 ---
 home: true
 icon: home
-title: 主页
+title: Java 面试指南
 heroImage: /logo.svg
 heroText: JavaGuide
 tagline: 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！
-action:
+actions:
   - text: 开始阅读
     link: /home/
     type: primary
-  - text: 关于作者
-    link: /about-the-author/
+  - text: 知识星球
+    link: /about-the-author/zhishixingqiu-two-years.md
+    type: default
+footer: |-
+  <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2020015769号-1</a> | 主题: <a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a>
 ---
 
-## 👍官方知识星球
+<div align="center">
+     <p>
+        <a href="https://www.yuque.com/docs/share/8a30ffb5-83f3-40f9-baf9-38de68b906dc">
+            <img src="https://oss.javaguide.cn/xingqiu/xingqiu.png" style="margin: 0 auto; width: 850px;" />
+        </a>
+    </p>
+</div>
 
- [JavaGuide 官方知识星球](https://www.yuque.com/docs/share/8a30ffb5-83f3-40f9-baf9-38de68b906dc)来啦！！！如果你需要专属面试小册/一对一交流/简历修改/专属求职指南/学习打卡，不妨花 3 分钟左右看看星球的详细介绍： [JavaGuide 知识星球详细介绍](https://www.yuque.com/docs/share/8a30ffb5-83f3-40f9-baf9-38de68b906dc) （一定要确定自己真的需要再加入，一定要看完详细介绍之后再加我）。
 
-**用心做内容，真心希望帮助到你，拒绝知识付费割韭菜。加油！！！**
+## 关于网站
 
-## 👉推荐阅读 
+- [项目介绍](./javaguide/intro.md)
+- [网站历史](./javaguide/history.md)
+- [贡献指南](./javaguide/contribution-guideline.md)
+- [常见问题](./javaguide/faq.md)
 
-- [Java学习路线](https://zhuanlan.zhihu.com/p/379041500) : 一份涵盖 Java 后端开发必备技能的学习路线！全面且清晰！
-- [Java开源项目精选](https://gitee.com/SnailClimb/awesome-java) ：收集整理了 Gitee/Github 上非常棒的 Java 开源项目集合。Java 开发必备！
-- [Java技术文章精选集](/high-quality-technical-articles/) : 精选一些和 Java 相关的优质技术文章，每一篇都值得你阅读 3 遍以上！
-- [Java书单精选](https://gitee.com/SnailClimb/awesome-cs) : Java 后端开发值得一读的一些书籍。
+## 关于作者
 
-## 🔥PDF 资源
+- [我曾经也是网瘾少年](./about-the-author/internet-addiction-teenager.md)
+- [害，毕业三年了！](./about-the-author/my-college-life.md)
+- [我的知识星球快 3 岁了！](./about-the-author/zhishixingqiu-two-years.md)
+- [坚持写技术博客六年了](./about-the-author/writing-technology-blog-six-years.md)
+
+## PDF
 
 - [《JavaGuide 面试突击版》](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=100029614&idx=1&sn=62993c5cf10265cb7018db7f1ec67250&chksm=4ea1fb6579d67273499b7243641d4ef372decd08047bfbb6dfb5843ef81c7ccba209086cf345#rd)
 - [《消息队列常见知识点&面试题总结》](https://t.1yb.co/Fy0u)
@@ -34,14 +47,14 @@ action:
 - [《分布式相关面试题汇总》](https://t.1yb.co/GXLF)
 - [《图解计算机基础》](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=100021725&idx=1&sn=2db9664ca25363139a81691043e9fd8f&chksm=4ea19a1679d61300d8990f7e43bfc7f476577a81b712cf0f9c6f6552a8b219bc081efddb5c54#rd)
 
-## 💡官方公众号
+## 公众号
 
-最新更新会第一时间同步在公众号，强烈推荐大家关注一波！另外，公众号上有很多干货不会同步在线阅读网站。
+最新更新会第一时间同步在公众号，推荐关注！另外，公众号上有很多干货不会同步在线阅读网站。
 
-![我的公众号](https://cdn.jsdelivr.net/gh/javaguide-tech/blog-images/2020-08/167598cd2e17b8ec.png)
-
-## 📧联系我
-
-交流/加群/互看朋友圈，欢迎添加我的微信（备注“Github”即可）。
-
-![](../media/pictures/weixin.jpeg)
+<div style="text-align:center">
+    <p>
+        <a href="https://javaguide.cn/about-the-author/zhishixingqiu-two-years.html">
+            <img src="https://oss.javaguide.cn/github/javaguide/gongzhonghaoxuanchuan.png" style="margin: 0 auto;" />
+        </a>
+    </p>
+</div>
